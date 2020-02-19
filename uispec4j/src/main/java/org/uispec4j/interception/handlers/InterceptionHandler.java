@@ -7,8 +7,8 @@ import org.uispec4j.interception.WindowInterceptor;
  * Internal interface for window handlers used by {@link WindowInterceptor}.
  */
 public interface InterceptionHandler {
-  /**
-   * Called to process a modal dialog when it is shown.
-   */
-  void process(Window window);
+    /**
+     * Called to process a modal dialog when it is shown.
+     */
+    void process(Window window);
 }

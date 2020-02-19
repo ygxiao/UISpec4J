@@ -6,4 +6,5 @@ tmp/
 *.ipr
 *.iml
 *.iws
+.idea/
 *~

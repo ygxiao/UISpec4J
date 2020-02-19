@@ -11,6 +11,8 @@
     <module>uispec4j</module>
     <module>addressbook</module>
     <module>calculator</module>
+      <module>testSwing</module>
+      <module>triggerExternal</module>
   </modules>
 
   <!-- Project Information -->

@@ -19,7 +19,7 @@ import org.uispec4j.interception.toolkit.UISpecDisplay;
  */
 public abstract class UISpecTestCase extends TestCase {
 
-  static final String ADAPTER_CLASS_PROPERTY = "uispec4j.adapter";
+  static final public String ADAPTER_CLASS_PROPERTY = "uispec4j.adapter";
   static final String PROPERTY_NOT_DEFINED;
 
   private UISpecAdapter adapter;
@@ -217,7 +217,7 @@ public abstract class UISpecTestCase extends TestCase {
     return adapter;
   }
 
-  static class AdapterNotFoundException extends RuntimeException {
+  public static class AdapterNotFoundException extends RuntimeException {
     public AdapterNotFoundException() {
       super(PROPERTY_NOT_DEFINED);
     }

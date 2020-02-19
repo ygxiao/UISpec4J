@@ -8,11 +8,11 @@ import java.awt.*;
  * @see org.uispec4j.Panel
  */
 public interface ComponentMatcher {
-  boolean matches(Component component);
+    boolean matches(Component component);
 
-  public static final ComponentMatcher ALL = new ComponentMatcher() {
-    public boolean matches(Component component) {
-      return true;
-    }
-  };
+    public static final ComponentMatcher ALL = new ComponentMatcher() {
+        public boolean matches(Component component) {
+            return true;
+        }
+    };
 }

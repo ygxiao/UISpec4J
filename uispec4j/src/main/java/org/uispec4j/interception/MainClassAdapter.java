@@ -12,21 +12,21 @@ import org.uispec4j.utils.MainClassTrigger;
  * adapter.
  */
 public class MainClassAdapter implements UISpecAdapter {
-  private Window window;
-  private Trigger trigger;
+    private Window window;
+    private Trigger trigger;
 
-  public MainClassAdapter(Class mainClass, String... args) {
-    this.trigger = new MainClassTrigger(mainClass, args);
-  }
-
-  public Window getMainWindow() {
-    if (window == null) {
-      window = WindowInterceptor.run(trigger);
+    public MainClassAdapter(Class mainClass, String... args) {
+        this.trigger = new MainClassTrigger(mainClass, args);
     }
-    return window;
-  }
 
-  public void reset() {
-    window = null;
-  }
+    public Window getMainWindow() {
+        if (window == null) {
+            window = WindowInterceptor.run(trigger);
+        }
+        return window;
+    }
+
+    public void reset() {
+        window = null;
+    }
 }
